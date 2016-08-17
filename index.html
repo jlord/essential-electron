@@ -13,36 +13,59 @@
   <body>
     <div class="wrapper">
 <h1 id="essential-electron">Essential Electron</h1>
-<p>Below you&#39;ll (hopefully) find questions about Electron answered, words defined and resources linked. And concisely!</p>
+<p>Concise plain-speak about Electron.</p>
 <h2 id="what-is-electron-">What is Electron?</h2>
-<p>Electron is a <span class="def">library</span> you can use to build desktop applications with <span class="def">JavaScript, HTML and CSS</span>. These applications can be packaged to run on Mac, Windows and Linux computers.</p>
-<h3 id="next">Next</h3>
+<p>Electron is a <span class="def">library</span> you can use to build desktop applications with <span class="def">JavaScript, HTML and CSS</span>. These applications can be packaged to run on Mac, Windows and Linux computers as well as be placed in the Mac and Windows app stores.</p>
+<h3 id="next-why-is-this-important-why-is-this-important-">Next: <a href="#why-is-this-important-">Why is this important?</a></h3>
+<h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><a href="#why-is-this-important">Why is this important?</a></li>
+<li><strong>JavaScript, HTML and CSS</strong> Are web languages, meaning they are the building blocks of websites and browsers like Chrome know how to turn this code into the visual graphics you see.</li>
+<li><strong>Electron is a library</strong> Electron is code that you can re-use and not have to write yourself. You use it to build your project on top of.</li>
 </ul>
-<h4 id="definitions-">Definitions:</h4>
+<h3 id="resources-">Resources:</h3>
 <ul>
-<li><strong>JavaScript, HTML and CSS</strong> Are web languages, meaning they are the building blocks of websites and web browsers like Chrome and Safari know how to turn this code into the visual graphics you see.</li>
-<li><strong>Electron is a library</strong> Electron is code that you can re-use and not have to write yourself. You can use it to write your project on top of.</li>
+<li><a href="">Apps built on Electron</a></li>
 </ul>
 <h2 id="why-is-this-important-">Why is this important?</h2>
-<p>Typically, desktop applications for each operating system are written in that operating systems native language. That can mean having three teams writing your app three times to work on each kind of system. With Electron, you can write your app just once and using the common web languages (HTML, CSS and JavaScript) which makes app development more</p>
+<p>Typically, desktop applications for each operating system are written in each&#39;s <span class="def">native language</span>. That can mean having three teams writing three versions of your app. Electron enables you to write your app once and with web languages.</p>
 <h3 id="next">Next</h3>
 <ul>
-<li><a href="#how">How</a></li>
+<li><a href="#how-even-">How, even?</a></li>
 </ul>
-<h2 id="how">How</h2>
-<p>Electron itself is mostly C++. It&#39;s a combination of <a href="">Chromium</a> (the open source version of Google Chrome), <a href="">Node.js</a> (server-side JavaScript language) and a set of APIs (Application Program Interface) for native operating system functions like open file dialogs, notifications, icons and more.</p>
-<h3 id="more">More</h3>
+<h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><a href="#how-are-chrome-and-node-combined">How are Chrome and Node combined?</a></li>
+<li><strong>native (operating system) language</strong> These are languages that the major operating systems are (mostly) built with: Mac, Objective C; Linux, C; Windows, C++.</li>
 </ul>
-<h2 id="how-are-chrome-and-node-combined">How are Chrome and Node combined</h2>
-<p><a href="">Chromium</a> and <a href="">Node.js</a> projects are both built on the same JavaScript rendering engine, <a href="">V8</a> (built first for Chromium). In Electron they share one version of V8, the one in Chrome. Sometimes Electron&#39;s Node needs to be patched to make this work, sometimes not.</p>
-<p><img src="" alt="img of 3 parts"></p>
-<h2 id="what-are-the-trade-offs-">What are the trade offs?</h2>
-<h2 id="what-are-the-perks-">What are the perks?</h2>
-<h2 id="what-is-developing-on-electron-like-">What is developing on Electron like?</h2>
+<h2 id="how-even-">How, even?</h2>
+<p>Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more. Both Chromium and Node are built on V8 and in Electron they share one instance of it.</p>
+<h3 id="next-what-is-developing-with-electron-like-what-is-developing-with-electron-like-">Next: <a href="#what-is-developing-with-Electron-like-">What is developing with Electron like?</a></h3>
+<h3 id="definitions-">Definitions:</h3>
+<ul>
+<li><strong>API</strong> Application Program Interface describes the set of methods made available for you to use (aka interface) a library with.</li>
+<li><strong>Chromium</strong> Created by Google, this is the open source library that the browser Chrome is built on.</li>
+<li><strong>Node.js</strong> A tool for writing JavaScript on servers (your computer is also a server!).</li>
+<li><strong>V8</strong> Chrome and Node.js use V8, an engine that translates JavaScript into the code that can talk directly to the computer or server.</li>
+</ul>
+<h3 id="resources-">Resources:</h3>
+<ul>
+<li><a href="https://nodejs.org">Node.js</a></li>
+<li><a href="">Chromium</a></li>
+<li><a href="">Electron blog post</a></li>
+</ul>
+<h2 id="what-s-developing-like-">What&#39;s developing like?</h2>
+<p>Developing with Electron is like building web pages that you can seamless use Node in (really!) and only need to <span class="def">work in one browser</span>—the latest version of that browser and all the goodies that come along with it like <span class="def">ES2015</span> support and CSS Variables.</p>
+<h3 id="next-how-do-i-start-how-do-i-start-">Next: <a href="#how-do-i-start-">How do I start?</a></h3>
+<h3 id="definitions-">Definitions:</h3>
+<ul>
+<li><strong>Work in one browser</strong> Not all browsers are the same and web designers and developers often have to go the extra mile to make one site look the same on each.</li>
+<li><strong>ES2015</strong> Chromium&#39;s V8 supports over 90% of ES2015, the latest updates to JavaScript.</li>
+</ul>
+<h3 id="resources-">Resources:</h3>
+<ul>
+<li><a href="https://nodejs.org">New Chrome</a></li>
+<li><a href="">Chromium</a></li>
+<li><a href="">CSS Variables</a></li>
+</ul>
     </div>
   </body>
 </html>

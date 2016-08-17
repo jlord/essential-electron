@@ -58,6 +58,6 @@ a {
 }
 
 .def,
-h4 + ul strong {
+h3 + ul strong {
   color: #569efe;
 }
