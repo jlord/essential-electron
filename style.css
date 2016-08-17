@@ -3,10 +3,12 @@ body {
   color: #333;
   font-size: 1.3em;
   line-height: 1.5em;
+  padding: 20px;
 }
 
 h1 {
   font-size: 4em;
+  line-height: 1em;
 }
 
 h1 + p {
@@ -29,9 +31,8 @@ h2 {
   padding-top: 40px;
 }
 
-h3,
-h3 + p {
-  /*color: rgb(161, 247, 234);*/
+h3 {
+  line-height: 1.5em;
 }
 
 h4,
@@ -60,4 +61,10 @@ a {
 .def,
 h3 + ul strong {
   color: #569efe;
+}
+
+@media (max-width: 900px) {
+  h1 { font-size: 3em; line-height: 1.2em; }
+  h2 { font-size: 2em; line-height: 1.5em; }
+  h1 + p, h2 + p { font-size: 1em; line-height: 1.5em; }
 }
