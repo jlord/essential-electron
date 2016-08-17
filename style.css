@@ -1,0 +1,63 @@
+body {
+  font-family: Source Sans Pro;
+  color: #333;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h1 + p {
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+h1 +p,
+h2 + p {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  border-top: 2px solid #333;
+  padding-top: 40px;
+}
+
+h3,
+h3 + p {
+  /*color: rgb(161, 247, 234);*/
+}
+
+h4,
+h4 + ul {
+}
+
+h2, h3, h4, h5, h6 {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+
+a {
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #333;
+}
+
+.wrapper {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.def,
+h4 + ul strong {
+  color: #569efe;
+}
