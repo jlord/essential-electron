@@ -6,6 +6,10 @@ body {
   padding: 20px;
 }
 
+img {
+  width: 100%;
+}
+
 h1 {
   font-size: 4em;
   line-height: 1em;

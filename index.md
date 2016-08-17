@@ -30,6 +30,8 @@ Typically, desktop applications for each operating system are written in each's 
 
 Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more. Both Chromium and Node are built on V8 and in Electron they share one instance of it.
 
+![Electron components](imgs/electron-components.png)
+
 ### Next: [What is developing with Electron like?](#what-is-developing-with-Electron-like-)
 
 ### Definitions:
