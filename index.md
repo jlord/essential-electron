@@ -88,7 +88,7 @@ Since Electron's two components are websites and Node you'll need experience in 
 Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.
 
 ### Definitions:
-- **Modules** Electron's APIs are grouped together in modules based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
+- **Modules** Electron's APIs are grouped together based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
 
 ### Next: [Main Process](#main-process)
 
