@@ -1,5 +1,5 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', sans-serif;
   color: #333;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -89,9 +89,16 @@ table:first-of-type tbody tr:nth-of-type(odd) {
   background: #f9f9f9;
 }
 
+code {
+  border: 1px solid #d1d1d1;
+  padding: 2px 11px 3px 11px;
+  border-radius: 13px;
+}
+
 footer {
   padding: 20px 0;
 }
+
 @media (max-width: 900px) {
   h1 { font-size: 3em; line-height: 1.2em; }
   h2 { font-size: 2em; line-height: 1.5em; }
