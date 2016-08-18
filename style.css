@@ -67,6 +67,31 @@ h3 + ul strong {
   color: #569efe;
 }
 
+/* Maybe I'll want all tables to be this way
+   but for now, :first-of-type
+*/
+
+table:first-of-type {
+  text-align: left;
+}
+
+table:first-of-type th {
+  padding-bottom: 12px;
+  font-size: 1.2em;
+}
+
+table:first-of-type th,
+table:first-of-type tbody td {
+  padding: 8px 12px;
+}
+
+table:first-of-type tbody tr:nth-of-type(odd) {
+  background: #f9f9f9;
+}
+
+footer {
+  padding: 20px 0;
+}
 @media (max-width: 900px) {
   h1 { font-size: 3em; line-height: 1.2em; }
   h2 { font-size: 2em; line-height: 1.5em; }
