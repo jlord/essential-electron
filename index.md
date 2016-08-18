@@ -5,9 +5,10 @@ Concise plain-speak about Electron.
 | Background | Development |
 | --- | --- |
 | [What is Electron?](#what-is-electron-) | [How do I start?](#how-do-i-start-) |
-| [Why is this important?](#why-is-this-important-) | [How do I start?](#how-do-i-start-) |
-| [How, even?](#how-even-) | [How do I start?](#how-do-i-start-) |
-| [What is developing like?](#what-is-developing-like-) | [How do I start?](#how-do-i-start-) |
+| [Why is this important?](#why-is-this-important-) | [Electron's Two Processes](#electron-s-two-processes) |
+| [How, even?](#how-even-) | [Main Process](#how-do-i-start-) |
+| [What is developing like?](#what-is-developing-like-) | [Renderer Process](#how-do-i-start-) |
+| [WHAT GOES HERE](#what-is-developing-like-) | [Put it together](#how-do-i-start-) |
 
 ## What is Electron?
 
@@ -52,13 +53,13 @@ Electron combines <span class="def">Chromium</span> and <span class="def">Node.j
 
 ## What's developing like?
 
-Developing with Electron is like building web pages that you can seamlessly use Node in (really!) and only need to have <span class="def">work in one browser</span>. Plus you get all the latest goodies that come along with it like <span class="def">ES2015</span> support and CSS Variables.
+Developing with Electron is like building web pages that you can seamlessly use Node in—or building a Node app in which you can build an interface with HTML and CSS. And you only need to design for <span class="def">one browser</span>, the <span class="def">latest Chrome</span>.
 
 ### Next: [How do I start?](#how-do-i-start-)
 
 ### Definitions:
-- **Work in one browser** Not all browsers are the same and web designers and developers often have to go the extra mile to make one site look the same on each.
-- **ES2015** Chromium's V8 supports over 90% of ES2015, the latest updates to JavaScript.
+- **One browser** Not all browsers are the same and web designers and developers often have to go the extra mile to make one site look the same on each.
+- **Latest Chrome** Use over 90% of ES2015, the latest updates to JavaScript, as well as cool features like CSS Variables.
 
 ### Resources:
 - [Can I Use?](http://caniuse.com/#home) (see what each browser supports)
@@ -70,7 +71,7 @@ Developing with Electron is like building web pages that you can seamlessly use 
 Since Electron's two components are websites and Node you'll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.
 
 ### Definitions:
-- **Let's be real** Learning to make websites and write Node overnight things but hopefully the links below can get you started.
+- **Let's be real**, learning to make websites and write Node are not overnight things but hopefully the links below can get you started.
 
 ### Next: [Electron's Two Processes](#electron-s-two-processes)
 
@@ -84,17 +85,24 @@ Since Electron's two components are websites and Node you'll need experience in 
 
 ## Electron's Two Processes
 
-Since Electron's two components are websites and Node you'll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.
+Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.
 
 ### Definitions:
-- **Let's be real** Learning to make websites and write Node overnight things but hopefully the links below can get you started.
+- **Modules** Electron's APIs are grouped together in modules based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
 
-### Next: [Electron's Two Processes](#electron-s-two-processes)
+### Next: [Main Process](#main-process)
 
 ### Resources:
-- [Install Node](https://nodejs.org) (chose the LTS version)
-- [NodeSchool Tutorials](http://nodeschool.io) (try learnyounode)
-- [JS for Cats](http://jsforcats.com)
-- [Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css) (by Shay Howe)
-- [CSS Tricks](https://css-tricks.com)
-- [Mozilla Developer Network](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en)
+- [Electron APIs List](http://electron.atom.io/docs/api/)
+
+## Main Process
+
+Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.
+
+### Definitions:
+- **Modules** Electron's APIs are grouped together in modules based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
+
+### Next: [Main Process](#main-process)
+
+### Resources:
+- [Electron APIs List](http://electron.atom.io/docs/api/)
