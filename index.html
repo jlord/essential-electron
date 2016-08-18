@@ -15,6 +15,32 @@
     <div class="wrapper">
 <h1 id="essential-electron">Essential Electron</h1>
 <p>Concise plain-speak about Electron.</p>
+<table>
+<thead>
+<tr>
+<th>Background</th>
+<th>Development</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#what-is-electron-">What is Electron?</a></td>
+<td><a href="#how-do-i-start-">How do I start?</a></td>
+</tr>
+<tr>
+<td><a href="#why-is-this-important-">Why is this important?</a></td>
+<td><a href="#how-do-i-start-">How do I start?</a></td>
+</tr>
+<tr>
+<td><a href="#how-even-">How, even?</a></td>
+<td><a href="#how-do-i-start-">How do I start?</a></td>
+</tr>
+<tr>
+<td><a href="#what-is-developing-like-">What is developing like?</a></td>
+<td><a href="#how-do-i-start-">How do I start?</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="what-is-electron-">What is Electron?</h2>
 <p>Electron is a <span class="def">library</span> you can use to build desktop applications with <span class="def">JavaScript, HTML and CSS</span>. These applications can be packaged to run on Mac, Windows and Linux computers as well as be placed in the Mac and Windows app stores.</p>
 <h3 id="next-why-is-this-important-why-is-this-important-">Next: <a href="#why-is-this-important-">Why is this important?</a></h3>
@@ -25,37 +51,34 @@
 </ul>
 <h3 id="resources-">Resources:</h3>
 <ul>
-<li><a href="">Apps built on Electron</a></li>
+<li><a href="http://electron.atom.io/apps">Apps built on Electron</a></li>
 </ul>
 <h2 id="why-is-this-important-">Why is this important?</h2>
 <p>Typically, desktop applications for each operating system are written in each&#39;s <span class="def">native language</span>. That can mean having three teams writing three versions of your app. Electron enables you to write your app once and with web languages.</p>
-<h3 id="next">Next</h3>
-<ul>
-<li><a href="#how-even-">How, even?</a></li>
-</ul>
+<h3 id="next-how-even-how-even-">Next: <a href="#how-even-">How, even?</a></h3>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
 <li><strong>native (operating system) language</strong> These are languages that the major operating systems are (mostly) built with: Mac, Objective C; Linux, C; Windows, C++.</li>
 </ul>
 <h2 id="how-even-">How, even?</h2>
-<p>Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more. Both Chromium and Node are built on V8 and in Electron they share one instance of it.</p>
+<p>Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more.</p>
 <p><img src="imgs/electron-components.png" alt="Electron components"></p>
-<h3 id="next-what-is-developing-with-electron-like-what-is-developing-with-electron-like-">Next: <a href="#what-is-developing-with-Electron-like-">What is developing with Electron like?</a></h3>
+<h3 id="next-what-is-developing-like-what-s-developing-like-">Next: <a href="#what-s-developing-like-">What is developing like?</a></h3>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><strong>API</strong> Application Program Interface describes the set of methods made available for you to use (aka interface) a library with.</li>
-<li><strong>Chromium</strong> Created by Google, this is the open source library that the browser Chrome is built on.</li>
-<li><strong>Node.js</strong> A tool for writing JavaScript on servers (your computer is also a server!).</li>
-<li><strong>V8</strong> Chrome and Node.js use V8, an engine that translates JavaScript into the code that can talk directly to the computer or server.</li>
+<li><strong>API</strong> Application Program Interface describes the set of methods made available for you to use a library with.</li>
+<li><strong>Chromium</strong> Created by Google, this is the open source library used by Google&#39;s Chrome browser.</li>
+<li><strong>Node.js</strong> (or Node) A tool for writing JavaScript on servers, accessing filesystems and networks (your computer is also a server!).</li>
+<li><strong>V8</strong> Chrome and Node.js use V8, an engine that translates JavaScript into the code that can run directly on the computer.</li>
 </ul>
 <h3 id="resources-">Resources:</h3>
 <ul>
 <li><a href="https://nodejs.org">Node.js</a></li>
-<li><a href="">Chromium</a></li>
-<li><a href="">Electron blog post</a></li>
+<li><a href="http://chromium.org">Chromium</a></li>
+<li><a href="http://electron.atom.io/blog/2016/08/08/electron-internals-using-node-as-a-library">Electron blog post: Using Node as a Library</a> (deep dive)</li>
 </ul>
 <h2 id="what-s-developing-like-">What&#39;s developing like?</h2>
-<p>Developing with Electron is like building web pages that you can seamless use Node in (really!) and only need to <span class="def">work in one browser</span>—the latest version of that browser and all the goodies that come along with it like <span class="def">ES2015</span> support and CSS Variables.</p>
+<p>Developing with Electron is like building web pages that you can seamlessly use Node in (really!) and only need to have <span class="def">work in one browser</span>. Plus you get all the latest goodies that come along with it like <span class="def">ES2015</span> support and CSS Variables.</p>
 <h3 id="next-how-do-i-start-how-do-i-start-">Next: <a href="#how-do-i-start-">How do I start?</a></h3>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
@@ -64,10 +87,45 @@
 </ul>
 <h3 id="resources-">Resources:</h3>
 <ul>
-<li><a href="https://nodejs.org">New Chrome</a></li>
-<li><a href="">Chromium</a></li>
-<li><a href="">CSS Variables</a></li>
+<li><a href="http://caniuse.com/#home">Can I Use?</a> (see what each browser supports)</li>
+<li><a href="http://blog.chromium.org">Updates to Chrome</a> (Chromium Blog)</li>
+<li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">CSS Variables</a></li>
 </ul>
+<h2 id="how-do-i-start-">How do I start?</h2>
+<p>Since Electron&#39;s two components are websites and Node you&#39;ll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.</p>
+<h3 id="definitions-">Definitions:</h3>
+<ul>
+<li><strong>Let&#39;s be real</strong> Learning to make websites and write Node overnight things but hopefully the links below can get you started.</li>
+</ul>
+<h3 id="next-electron-s-two-processes-electron-s-two-processes-">Next: <a href="#electron-s-two-processes">Electron&#39;s Two Processes</a></h3>
+<h3 id="resources-">Resources:</h3>
+<ul>
+<li><a href="https://nodejs.org">Install Node</a> (chose the LTS version)</li>
+<li><a href="http://nodeschool.io">NodeSchool Tutorials</a> (try learnyounode)</li>
+<li><a href="http://jsforcats.com">JS for Cats</a></li>
+<li><a href="http://learn.shayhowe.com/html-css">Learn to Code HTML &amp; CSS</a> (by Shay Howe)</li>
+<li><a href="https://css-tricks.com">CSS Tricks</a></li>
+<li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">Mozilla Developer Network</a></li>
+</ul>
+<h2 id="electron-s-two-processes">Electron&#39;s Two Processes</h2>
+<p>Since Electron&#39;s two components are websites and Node you&#39;ll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.</p>
+<h3 id="definitions-">Definitions:</h3>
+<ul>
+<li><strong>Let&#39;s be real</strong> Learning to make websites and write Node overnight things but hopefully the links below can get you started.</li>
+</ul>
+<h3 id="next-electron-s-two-processes-electron-s-two-processes-">Next: <a href="#electron-s-two-processes">Electron&#39;s Two Processes</a></h3>
+<h3 id="resources-">Resources:</h3>
+<ul>
+<li><a href="https://nodejs.org">Install Node</a> (chose the LTS version)</li>
+<li><a href="http://nodeschool.io">NodeSchool Tutorials</a> (try learnyounode)</li>
+<li><a href="http://jsforcats.com">JS for Cats</a></li>
+<li><a href="http://learn.shayhowe.com/html-css">Learn to Code HTML &amp; CSS</a> (by Shay Howe)</li>
+<li><a href="https://css-tricks.com">CSS Tricks</a></li>
+<li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">Mozilla Developer Network</a></li>
+</ul>
+      <footer>
+        <small>✌️ Made because of computers by <a href="twitter.com/jllord" target="_blank">@jllord</a>. <a href="https://github.com/jlord/essential-electron" target="_blank"> Open source on GitHub </a>.</small>
+      </footer>
     </div>
   </body>
 </html>
