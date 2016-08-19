@@ -112,7 +112,7 @@
 <li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">Mozilla Developer Network</a></li>
 </ul>
 <h2 id="electron-s-two-processes">Electron&#39;s Two Processes</h2>
-<p>Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.</p>
+<p>Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on each or both of the two processes. The main process is more behind-the-scenes while the renderer process is each of the windows of your app that users see.</p>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
 <li><strong>Modules</strong> Electron&#39;s APIs are grouped together based on what they do. For instance the <code>dialog</code> module has all the APIs for native dialogs like open file, save file and alerts.</li>
@@ -123,12 +123,12 @@
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="main-process">Main Process</h2>
-<p>Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.</p>
+<p>The main process is the entry point to every Electron app. It controls the life of the app, from start up to quit. It also does the heavy lifting <span class="def">executing native elements</span> and creating each new browser window, aka renderer process, that users will interact with.</p>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><strong>Modules</strong> Electron&#39;s APIs are grouped together in modules based on what they do. For instance the <code>dialog</code> module has all the APIs for native dialogs like open file, save file and alerts.</li>
+<li><strong>Executing native elements</strong> Opening dialogs and other native operating system interactions is resource intensive so it&#39;s done in the main process, leaving the renderer process uninterrupted.</li>
 </ul>
-<h3 id="next-main-process-main-process-">Next: <a href="#main-process">Main Process</a></h3>
+<h3 id="next-renderer-process-renderer-process-">Next: <a href="#renderer-process">Renderer Process</a></h3>
 <h3 id="resources-">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>

@@ -85,7 +85,7 @@ Since Electron's two components are websites and Node you'll need experience in 
 
 ## Electron's Two Processes
 
-Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.
+Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on each or both of the two processes. The main process is more behind-the-scenes while the renderer process is each of the windows of your app that users see.
 
 ### Definitions:
 - **Modules** Electron's APIs are grouped together based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
@@ -97,12 +97,12 @@ Electron has two processes: Main and Renderer. There are <span class="def">modul
 
 ## Main Process
 
-Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on both and some that only work on one of the two.
+The main process is the entry point to every Electron app. It controls the life of the app, from start up to quit. It also does the heavy lifting <span class="def">executing native elements</span> and creating each new browser window, aka renderer process, that users will interact with.
 
 ### Definitions:
-- **Modules** Electron's APIs are grouped together in modules based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
+- **Executing native elements** Opening dialogs and other native operating system interactions is resource intensive so it's done in the main process, leaving the renderer process uninterrupted.
 
-### Next: [Main Process](#main-process)
+### Next: [Renderer Process](#renderer-process)
 
 ### Resources:
 - [Electron APIs List](http://electron.atom.io/docs/api/)

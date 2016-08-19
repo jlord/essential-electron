@@ -1,8 +1,8 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   color: #333;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -93,8 +93,11 @@ table:first-of-type tbody tr:nth-of-type(odd) {
 }
 
 code {
+  font-family: Consolas, 'Liberation Mono',
+    Menlo, Courier, monospace;
+  font-size: .75em;
   border: 1px solid #d1d1d1;
-  padding: 2px 11px 3px 11px;
+  padding: 4px 11px 3px 11px;
   border-radius: 13px;
 }
 
