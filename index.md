@@ -2,13 +2,26 @@
 
 Concise plain-speak about Electron.
 
-| Background | Development | Development Cont'd |
-| --- | --- |
-| [What is Electron?](#what-is-electron-) | [How do I start?](#how-do-i-start-) | [Stay in touch](#stay-in-touch) |
-| [Why is this important?](#why-is-this-important-) | [Electron's Two Processes](#electron-s-two-processes) | [Put it all together](#stay-in-touch) |
-| [How, even?](#how-even-) | [Main Process](#main-process) |
-| [What is developing like?](#what-is-developing-like-) | [Renderer Process](#renderer-process) |
-|  | [Think of it like this](#think-of-it-like-this) |
+| Background |
+| --- |
+| [What is Electron?](#what-is-electron-) |
+| [Why is this important?](#why-is-this-important-) |
+| [How, even?](#how-even-) |
+| [What is developing like?](#what-is-developing-like-) |
+
+| Development |
+| --- |
+| [Prereqs](#prereqs) |
+| [Two Processes](#two-processes) |
+| [Main Process](#main-process) |
+| [Renderer Process](#renderer-process) |
+
+| Development Cont'd |
+| --- |
+| [Think of it like this](#think-of-it-like-this) |
+| [Stay in touch](#stay-in-touch) |
+| [Put it all together](#put-it-all-together) |
+| [Quick start](#quick-start) |
 
 ## What is Electron?
 
@@ -36,7 +49,7 @@ Typically, desktop applications for each operating system are written in each's 
 
 Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more.
 
-![Electron components](https://cloud.githubusercontent.com/assets/1305617/17800655/d501ab14-6599-11e6-89d2-e2f3f702cc71.png)
+![Electron components](imgs/components.png)
 
 ### Next: [What is developing like?](#what-s-developing-like-)
 
@@ -55,7 +68,7 @@ Electron combines <span class="def">Chromium</span> and <span class="def">Node.j
 
 Developing with Electron is like building web pages that you can seamlessly <span class="def">use Node in</span>—or building a Node app in which you can build an interface with HTML and CSS. And you only need to design for <span class="def">one browser</span>, the <span class="def">latest Chrome</span>.
 
-### Next: [How do I start?](#how-do-i-start-)
+### Next: Development [Prereqs](#prereqs)
 
 ### Definitions:
 - **Use Node in** That's not all! In additional to the full Node API everywhere, you can make use of the over 300,000 modules already written and hosted on npm, a package manager for Node.
@@ -67,14 +80,14 @@ Developing with Electron is like building web pages that you can seamlessly <spa
 - [Updates to Chrome](http://blog.chromium.org) (Chromium Blog)
 - [CSS Variables](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en)
 
-## How do I start?
+## Prereqs
 
 Since Electron's two components are websites and JavaScript, you'll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.
 
 ### Definitions:
 - **Let's be real**, learning to make websites and write Node are not overnight things but hopefully the links below can get you started.
 
-### Next: [Electron's Two Processes](#electron-s-two-processes)
+### Next: [Two Processes](#two-processes)
 
 ### Resources:
 - [Install Node](https://nodejs.org) (chose the LTS version)
@@ -84,7 +97,7 @@ Since Electron's two components are websites and JavaScript, you'll need experie
 - [CSS Tricks](https://css-tricks.com)
 - [Mozilla Developer Network](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en)
 
-## Electron's Two Processes
+## Two Processes
 
 Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on each or both of the two processes. The main process is more behind-the-scenes while the renderer process is each of the windows of your app that users see.
 
@@ -98,9 +111,9 @@ Electron has two processes: Main and Renderer. There are <span class="def">modul
 
 ## Main Process
 
-The main process is the entry point to every Electron app. It controls the life of the app, from open to close. It also <span class="def">calls the native elements</span> and creates each new browser window, aka renderer process, in the app. The full Node API is built in.
+The main process, commonly a file named `main.js`, is the entry point to every Electron app. It controls the life of the app, from open to close. It also <span class="def">calls the native elements</span> and creates each new renderer process in the app. The full Node API is built in.
 
-![main process diagram](https://cloud.githubusercontent.com/assets/1305617/17799473/ce14ba80-658f-11e6-9909-684dcbaa5d25.png)
+![main process diagram](imgs/main.png)
 
 ### Definitions:
 - **Calls the native elements** Opening dialogs and other native operating system interactions is resource intensive so it's done in the main process, leaving the renderer process uninterrupted.
@@ -112,9 +125,9 @@ The main process is the entry point to every Electron app. It controls the life 
 
 ## Renderer Process
 
-The renderer process is <span class="def">each browser window</span> that you create in your app. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any other web browser.
+The renderer process is <span class="def">each browser window</span> that you create in your app, one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any other web browser.
 
-![renderer process diagram](https://cloud.githubusercontent.com/assets/1305617/17799695/831d0314-6591-11e6-8ecc-897502da234f.png)
+![renderer process diagram](imgs/renderer.png)
 
 ### Definitions:
 - **Each browser window** is a separate renderer process, meaning a crash in one won't affect another.
@@ -128,7 +141,7 @@ The renderer process is <span class="def">each browser window</span> that you cr
 
 In Chrome (or another web browser) each tab and its web page is like a single renderer process in Electron. If you close all of the tabs, Chrome is still there, this is like your main process, and you can open a new window or quit the app.
 
-![Chrome comparison of the two processes](https://cloud.githubusercontent.com/assets/1305617/17799606/d2d65f50-6590-11e6-9e57-59650efd2dcf.png)
+![Chrome comparison of the two processes](imgs/like-this.png)
 
 ### Next: [Think of it like this](#think-of-it-like-this)
 
@@ -136,7 +149,7 @@ In Chrome (or another web browser) each tab and its web page is like a single re
 
 The main and renderer processes need to be able to communicate since they're both responsible for different tasks. For that there's <span class="def">IPC</span>: interprocess communication. Use it to pass messages between main and renderer processes.
 
-![IPC diagram](https://cloud.githubusercontent.com/assets/1305617/17799777/506c76b0-6592-11e6-836e-3e2a18aba087.png)
+![IPC diagram](imgs/ipc.png)
 
 ### Definitions:
 - **IPC** The main process and renderer process each have an IPC module to use.
@@ -147,9 +160,16 @@ The main and renderer processes need to be able to communicate since they're bot
 
 Electron apps are like Node apps and use a <span class="def">`package.json` file</span>. It's there that you define which file is your main process and thus where Electron should start your app. Then that main process can create renderer processes and you'll use IPC to pass messages between the two.
 
-![Electron app components diagram](https://cloud.githubusercontent.com/assets/1305617/17800702/36c44c6c-659a-11e6-9185-434b6d3f3b1f.png)
+![Electron app components diagram](imgs/app-files.png)
 
 ### Definitions:
 - **`package.json` file** This is a common file in Node apps which contains metadata about the project and a list of dependencies.
 
-### Next: You know everything about Electron now!
+### Next: [Get going](#get-going)
+
+## Get Going
+
+The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.js` you've learned about here. It's a great place to get started!
+
+### Definitions:
+- **`package.json` file** This is a common file in Node apps which contains metadata about the project and a list of dependencies.
