@@ -70,25 +70,24 @@ h3 + ul strong {
   color: #569efe;
 }
 
-/* Maybe I'll want all tables to be this way
-   but for now, :first-of-type
-*/
-
-table:first-of-type {
+table {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
   text-align: left;
 }
 
-table:first-of-type th {
+table th {
   padding-bottom: 12px;
   font-size: 1.2em;
 }
 
-table:first-of-type th,
-table:first-of-type tbody td {
+table th,
+table tbody td {
   padding: 8px 12px;
 }
 
-table:first-of-type tbody tr:nth-of-type(odd) {
+table tbody tr:nth-of-type(odd) {
   background: #f9f9f9;
 }
 
