@@ -201,7 +201,7 @@ Once your app is built, you can package it with the <span class="def">command-li
 
 ## More resources
 
-The concepts here will get you far, but there is of course more. Here are some more resources.
+The concepts here will get you pretty far, but there is of course more so here are other resources.
 
 ### Resources:
 - [Full Electron docs](http://electron.atom.io/docs/)
