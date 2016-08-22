@@ -15,13 +15,16 @@ Concise plain-speak about Electron.
 | [Two Processes](#two-processes) |
 | [Main Process](#main-process) |
 | [Renderer Process](#renderer-process) |
+| [Think of it like this](#think-of-it-like-this) |
 
 | Development Cont'd |
 | --- |
-| [Think of it like this](#think-of-it-like-this) |
 | [Stay in touch](#stay-in-touch) |
 | [Put it all together](#put-it-all-together) |
-| [Get going](#get-going) |
+| [Quick start](#quick-start) |
+| [Packaging](#packaging) |
+| [More resources](#more-resources) |
+
 
 ## What is Electron?
 
@@ -35,6 +38,7 @@ Electron is a <span class="def">library</span> you can use to build desktop appl
 
 ### Resources:
 - [Apps built on Electron](http://electron.atom.io/apps)
+- [Electron API Demos](http://electron.atom.io/#get-started) (see what you can do with Electron)
 
 ## Why is this important?
 
@@ -54,14 +58,15 @@ Electron combines <span class="def">Chromium</span> and <span class="def">Node.j
 ### Next: [What is developing like?](#what-s-developing-like-)
 
 ### Definitions:
-- **API** Application Program Interface describes the set of methods made available for you to use a library with.
-- **Chromium** Created by Google, this is the open source library used by Google's Chrome browser.
+- **API** Application Program Interface describes the set of functions made available for you to use a library with.
+- **Chromium** Created by Google, this is the open source library used by Google's browser Chrome.
 - **Node.js** (or Node) A tool for writing JavaScript on servers, accessing filesystems and networks (your computer is also a server!).
 
 ### Resources:
 - [Node.js](https://nodejs.org)
 - [Chromium](http://chromium.org)
 - [Electron blog post: Using Node as a Library](http://electron.atom.io/blog/2016/08/08/electron-internals-using-node-as-a-library) (deep dive)
+- [Electron versioning](http://electron.atom.io/docs/tutorial/electron-versioning/)
 
 ## What's developing like?
 
@@ -124,7 +129,7 @@ The main process, commonly a file named `main.js`, is the entry point to every E
 
 ## Renderer Process
 
-The renderer process is <span class="def">each browser window</span> that you create in your app, one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any web browser.
+The renderer process is <span class="def">each browser window</span> that you create in your app, with one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any web browser.
 
 ![renderer process diagram](imgs/renderer.png)
 
@@ -167,14 +172,11 @@ Electron apps are like Node apps and use a <span class="def">`package.json` file
 ### Definitions:
 - **`package.json` file** This is a common file in Node apps which contains metadata about the project and a list of dependencies.
 
-### Next: [Get going](#get-going)
+### Next: [Quick start](#quick-start)
 
-## Get Going
+## Quick start
 
 The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.js` you've learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.
-
-### Definitions:
-- **`package.json` file** This is a common file in Node apps which contains metadata about the project and a list of dependencies.
 
 ### Next: [Packaging](#packaging)
 
@@ -184,7 +186,7 @@ The Electron Quick Start repository is a bare-bones Electron app with the `packa
 
 ## Packaging
 
-Once your app is built, you can package it with the command-line tool `electron-packager` for Mac, Windows or Linux. Add scripts for this to your `package.json`.
+Once your app is built, you can package it with the <span class="def">command-line tool</span> `electron-packager` for Mac, Windows or Linux. Add scripts for this to your `package.json`. Check out resources below for getting your app in the Mac and Windows app stores.
 
 ### Next: [More resources](#more-resources)
 
@@ -194,11 +196,15 @@ Once your app is built, you can package it with the command-line tool `electron-
 ### Resources:
 - [electron-packager](http://github.com/electron-userland/electron-packager)
 - [Electron API Demos packaging scripts](https://github.com/electron/electron-api-demos/blob/master/package.json#L15-L18)
+- [Mac App Store Electron Guide](http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide/)
+- [Windows App Store Electron Guide](http://electron.atom.io/docs/tutorial/windows-store-guide/)
 
 ## More resources
 
-You've finished learning that which is essential to Electron! Here are some other popular topics you might be interested in.
+The concepts here will get you far, but there is of course more. Here are some more resources.
 
 ### Resources:
-- [`electron-packager`](http://github.com/electron-userland/electron-packager)
-- [Electron API Demos packaging scripts](https://github.com/electron)
+- [Full Electron docs](http://electron.atom.io/docs/)
+- [Awesome Electron: tools, videos, components, meetups](http://electron.atom.io/community/)
+- [Spectron](http://electron.atom.io/spectron/) (Electron testing library)
+- [Devtron](http://electron.atom.io/devtron/) (Inspect your Electron app)

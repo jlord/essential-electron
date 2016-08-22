@@ -55,6 +55,9 @@
 <tr>
 <td><a href="#renderer-process">Renderer Process</a></td>
 </tr>
+<tr>
+<td><a href="#think-of-it-like-this">Think of it like this</a></td>
+</tr>
 </tbody>
 </table>
 <table>
@@ -65,16 +68,19 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#think-of-it-like-this">Think of it like this</a></td>
-</tr>
-<tr>
 <td><a href="#stay-in-touch">Stay in touch</a></td>
 </tr>
 <tr>
 <td><a href="#put-it-all-together">Put it all together</a></td>
 </tr>
 <tr>
-<td><a href="#get-going">Get going</a></td>
+<td><a href="#quick-start">Quick start</a></td>
+</tr>
+<tr>
+<td><a href="#packaging">Packaging</a></td>
+</tr>
+<tr>
+<td><a href="#more-resources">More resources</a></td>
 </tr>
 </tbody>
 </table>
@@ -89,6 +95,7 @@
 <h3 id="resources-">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/apps">Apps built on Electron</a></li>
+<li><a href="http://electron.atom.io/#get-started">Electron API Demos</a> (see what you can do with Electron)</li>
 </ul>
 <h2 id="why-is-this-important-">Why is this important?</h2>
 <p>Typically, desktop applications for each operating system are written in each&#39;s <span class="def">native language</span>. That can mean having three teams writing three versions of your app. Electron enables you to write your app once and with web languages.</p>
@@ -103,8 +110,8 @@
 <h3 id="next-what-is-developing-like-what-s-developing-like-">Next: <a href="#what-s-developing-like-">What is developing like?</a></h3>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><strong>API</strong> Application Program Interface describes the set of methods made available for you to use a library with.</li>
-<li><strong>Chromium</strong> Created by Google, this is the open source library used by Google&#39;s Chrome browser.</li>
+<li><strong>API</strong> Application Program Interface describes the set of functions made available for you to use a library with.</li>
+<li><strong>Chromium</strong> Created by Google, this is the open source library used by Google&#39;s browser Chrome.</li>
 <li><strong>Node.js</strong> (or Node) A tool for writing JavaScript on servers, accessing filesystems and networks (your computer is also a server!).</li>
 </ul>
 <h3 id="resources-">Resources:</h3>
@@ -112,6 +119,7 @@
 <li><a href="https://nodejs.org">Node.js</a></li>
 <li><a href="http://chromium.org">Chromium</a></li>
 <li><a href="http://electron.atom.io/blog/2016/08/08/electron-internals-using-node-as-a-library">Electron blog post: Using Node as a Library</a> (deep dive)</li>
+<li><a href="http://electron.atom.io/docs/tutorial/electron-versioning/">Electron versioning</a></li>
 </ul>
 <h2 id="what-s-developing-like-">What&#39;s developing like?</h2>
 <p>Developing with Electron is like building web pages that you can seamlessly <span class="def">use Node in</span>—or building a Node app in which you can build an interface with HTML and CSS. And you only need to design for <span class="def">one browser</span>, the <span class="def">latest Chrome</span>.</p>
@@ -168,7 +176,7 @@
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="renderer-process">Renderer Process</h2>
-<p>The renderer process is <span class="def">each browser window</span> that you create in your app, one commonly named <code>index.html</code>. Each of these displays the web pages you create—but you&#39;ve got the whole Node API available here, too, unlike any web browser.</p>
+<p>The renderer process is <span class="def">each browser window</span> that you create in your app, with one commonly named <code>index.html</code>. Each of these displays the web pages you create—but you&#39;ve got the whole Node API available here, too, unlike any web browser.</p>
 <p><img src="imgs/renderer.png" alt="renderer process diagram"></p>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
@@ -202,13 +210,9 @@
 <ul>
 <li><strong><code>package.json</code> file</strong> This is a common file in Node apps which contains metadata about the project and a list of dependencies.</li>
 </ul>
-<h3 id="next-get-going-get-going-">Next: <a href="#get-going">Get going</a></h3>
-<h2 id="get-going">Get Going</h2>
+<h3 id="next-quick-start-quick-start-">Next: <a href="#quick-start">Quick start</a></h3>
+<h2 id="quick-start">Quick start</h2>
 <p>The Electron Quick Start repository is a bare-bones Electron app with the <code>package.json</code>, <code>main.js</code> and <code>index.js</code> you&#39;ve learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.</p>
-<h3 id="definitions-">Definitions:</h3>
-<ul>
-<li><strong><code>package.json</code> file</strong> This is a common file in Node apps which contains metadata about the project and a list of dependencies.</li>
-</ul>
 <h3 id="next-packaging-packaging-">Next: <a href="#packaging">Packaging</a></h3>
 <h3 id="resources-">Resources:</h3>
 <ul>
@@ -216,7 +220,7 @@
 <li><a href="http://electron.atom.io/community#boilerplates">Awesome Electron: Boilerplates</a></li>
 </ul>
 <h2 id="packaging">Packaging</h2>
-<p>Once your app is built, you can package it with the command-line tool <code>electron-packager</code> for Mac, Windows or Linux. Add scripts for this to your <code>package.json</code>.</p>
+<p>Once your app is built, you can package it with the <span class="def">command-line tool</span> <code>electron-packager</code> for Mac, Windows or Linux. Add scripts for this to your <code>package.json</code>. Check out resources below for getting your app in the Mac and Windows app stores.</p>
 <h3 id="next-more-resources-more-resources-">Next: <a href="#more-resources">More resources</a></h3>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
@@ -226,13 +230,17 @@
 <ul>
 <li><a href="http://github.com/electron-userland/electron-packager">electron-packager</a></li>
 <li><a href="https://github.com/electron/electron-api-demos/blob/master/package.json#L15-L18">Electron API Demos packaging scripts</a></li>
+<li><a href="http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide/">Mac App Store Electron Guide</a></li>
+<li><a href="http://electron.atom.io/docs/tutorial/windows-store-guide/">Windows App Store Electron Guide</a></li>
 </ul>
 <h2 id="more-resources">More resources</h2>
-<p>You&#39;ve finished learning that which is essential to Electron! Here are some other popular topics you might be interested in.</p>
+<p>The concepts here will get you far, but there is of course more. Here are some more resources.</p>
 <h3 id="resources-">Resources:</h3>
 <ul>
-<li><a href="http://github.com/electron-userland/electron-packager"><code>electron-packager</code></a></li>
-<li><a href="https://github.com/electron">Electron API Demos packaging scripts</a></li>
+<li><a href="http://electron.atom.io/docs/">Full Electron docs</a></li>
+<li><a href="http://electron.atom.io/community/">Awesome Electron: tools, videos, components, meetups</a></li>
+<li><a href="http://electron.atom.io/spectron/">Spectron</a> (Electron testing library)</li>
+<li><a href="http://electron.atom.io/devtron/">Devtron</a> (Inspect your Electron app)</li>
 </ul>
       <footer>
         <small>✌️ Made because of computers by <a href="twitter.com/jllord" target="_blank">@jllord</a>. <a href="https://github.com/jlord/essential-electron" target="_blank"> Open source on GitHub </a>.</small>
