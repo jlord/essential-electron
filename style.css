@@ -108,4 +108,5 @@ footer {
   h1 { font-size: 3em; line-height: 1.2em; }
   h2 { font-size: 2em; line-height: 1.5em; }
   h1 + p, h2 + p { font-size: 1em; line-height: 1.5em; }
+  table + table + table th { display: none;}
 }

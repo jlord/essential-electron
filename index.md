@@ -21,7 +21,7 @@ Concise plain-speak about Electron.
 | [Think of it like this](#think-of-it-like-this) |
 | [Stay in touch](#stay-in-touch) |
 | [Put it all together](#put-it-all-together) |
-| [Quick start](#quick-start) |
+| [Get going](#get-going) |
 
 ## What is Electron?
 
@@ -57,7 +57,6 @@ Electron combines <span class="def">Chromium</span> and <span class="def">Node.j
 - **API** Application Program Interface describes the set of methods made available for you to use a library with.
 - **Chromium** Created by Google, this is the open source library used by Google's Chrome browser.
 - **Node.js** (or Node) A tool for writing JavaScript on servers, accessing filesystems and networks (your computer is also a server!).
-- **V8** Chrome and Node.js use V8, an engine that translates JavaScript into the code that can run directly on the computer.
 
 ### Resources:
 - [Node.js](https://nodejs.org)
@@ -68,7 +67,7 @@ Electron combines <span class="def">Chromium</span> and <span class="def">Node.j
 
 Developing with Electron is like building web pages that you can seamlessly <span class="def">use Node in</span>—or building a Node app in which you can build an interface with HTML and CSS. And you only need to design for <span class="def">one browser</span>, the <span class="def">latest Chrome</span>.
 
-### Next: Development [Prereqs](#prereqs)
+### Next: [Prereqs](#prereqs)
 
 ### Definitions:
 - **Use Node in** That's not all! In additional to the full Node API everywhere, you can make use of the over 300,000 modules already written and hosted on npm, a package manager for Node.
@@ -92,10 +91,10 @@ Since Electron's two components are websites and JavaScript, you'll need experie
 ### Resources:
 - [Install Node](https://nodejs.org) (chose the LTS version)
 - [NodeSchool Tutorials](http://nodeschool.io) (try learnyounode)
-- [JS for Cats](http://jsforcats.com)
+- [JS for Cats](http://jsforcats.com) (by Max Ogden)
 - [Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css) (by Shay Howe)
-- [CSS Tricks](https://css-tricks.com)
-- [Mozilla Developer Network](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en)
+- [CSS Tricks](https://css-tricks.com) (learn CSS best practices and tips)
+- [Mozilla Developer Network](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en) (like a dictionary for websites and JavaScript)
 
 ## Two Processes
 
@@ -116,7 +115,7 @@ The main process, commonly a file named `main.js`, is the entry point to every E
 ![main process diagram](imgs/main.png)
 
 ### Definitions:
-- **Calls the native elements** Opening dialogs and other native operating system interactions is resource intensive so it's done in the main process, leaving the renderer process uninterrupted.
+- **Calls the native elements** Opening dialogs and other native operating system interactions are resource intensive so it's done in the main process, leaving the renderer process uninterrupted.
 
 ### Next: [Renderer Process](#renderer-process)
 
@@ -125,7 +124,7 @@ The main process, commonly a file named `main.js`, is the entry point to every E
 
 ## Renderer Process
 
-The renderer process is <span class="def">each browser window</span> that you create in your app, one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any other web browser.
+The renderer process is <span class="def">each browser window</span> that you create in your app, one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any web browser.
 
 ![renderer process diagram](imgs/renderer.png)
 
@@ -143,11 +142,14 @@ In Chrome (or another web browser) each tab and its web page is like a single re
 
 ![Chrome comparison of the two processes](imgs/like-this.png)
 
-### Next: [Think of it like this](#think-of-it-like-this)
+### Resources:
+- [Differences between Main and Renderer Process](http://electron.atom.io/docs/tutorial/quick-start/#differences-between-main-process-and-renderer-process)
+
+### Next: [Stay in touch](#stay-in-touch)
 
 ## Stay in touch
 
-The main and renderer processes need to be able to communicate since they're both responsible for different tasks. For that there's <span class="def">IPC</span>: interprocess communication. Use it to pass messages between main and renderer processes.
+The main and renderer processes need to be able to communicate since they're both responsible for different tasks. For that there's <span class="def">IPC</span>, interprocess communication. Use it to pass messages between main and renderer processes.
 
 ![IPC diagram](imgs/ipc.png)
 
@@ -169,7 +171,34 @@ Electron apps are like Node apps and use a <span class="def">`package.json` file
 
 ## Get Going
 
-The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.js` you've learned about here. It's a great place to get started!
+The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.js` you've learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.
 
 ### Definitions:
 - **`package.json` file** This is a common file in Node apps which contains metadata about the project and a list of dependencies.
+
+### Next: [Packaging](#packaging)
+
+### Resources:
+- [Electron Quick Start](https://github.com/electron/electron-quick-start)
+- [Awesome Electron: Boilerplates](http://electron.atom.io/community#boilerplates)
+
+## Packaging
+
+Once your app is built, you can package it with the command-line tool `electron-packager` for Mac, Windows or Linux. Add scripts for this to your `package.json`.
+
+### Next: [More resources](#more-resources)
+
+### Definitions:
+- **command-line tool** This is a program that you interact with by passing commands to it in your terminal.
+
+### Resources:
+- [electron-packager](http://github.com/electron-userland/electron-packager)
+- [Electron API Demos packaging scripts](https://github.com/electron/electron-api-demos/blob/master/package.json#L15-L18)
+
+## More resources
+
+You've finished learning that which is essential to Electron! Here are some other popular topics you might be interested in.
+
+### Resources:
+- [`electron-packager`](http://github.com/electron-userland/electron-packager)
+- [Electron API Demos packaging scripts](https://github.com/electron)
