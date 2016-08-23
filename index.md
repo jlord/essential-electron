@@ -176,7 +176,7 @@ Electron apps are like Node apps and use a <span class="def">`package.json` file
 
 ## Quick start
 
-The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.js` you've learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.
+The Electron Quick Start repository is a bare-bones Electron app with the `package.json`, `main.js` and `index.html` you've learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.
 
 ### Next: [Packaging](#packaging)
 
