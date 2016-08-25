@@ -6,7 +6,7 @@ body {
   color: #333;
   font-size: 1.3em;
   line-height: 1.5em;
-  padding: 20px;
+  margin: 0;
 }
 
 img {
@@ -62,6 +62,8 @@ a {
 .wrapper {
   max-width: 900px;
   min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
