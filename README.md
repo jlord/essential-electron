@@ -20,7 +20,7 @@ You'll need [Node.js](https://nodejs.org) to build this site:
 
 ```bash
 # Clone repository
-git clone https://github.com/jlord/essential-electron
+git clone https://github.com/jlord/essential-electron.git
 # Go into repository clone
 cd essential-electron
 # Install dependencies
