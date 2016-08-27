@@ -103,7 +103,7 @@ Since Electron's two components are websites and JavaScript, you'll need experie
 
 ## Two Processes
 
-Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on each or both of the two processes. The main process is more behind-the-scenes while the renderer process is each of the windows of your app that users see.
+Electron has two types of processes: Main and Renderer. There are <span class="def">modules</span> that work on each or in both of the processes. The main process is more behind-the-scenes while the renderer process is each of the windows in your app.
 
 ### Definitions:
 - **Modules** Electron's APIs are grouped together based on what they do. For instance the `dialog` module has all the APIs for native dialogs like open file, save file and alerts.
@@ -129,12 +129,13 @@ The main process, commonly a file named `main.js`, is the entry point to every E
 
 ## Renderer Process
 
-The renderer process is <span class="def">each browser window</span> that you create in your app, with one commonly named `index.html`. Each of these displays the web pages you create—but you've got the whole Node API available here, too, unlike any web browser.
+The renderer process is a browser window in your app. Unlike the main process, there can be multiple of these and <span class="def">each is independent</span>. They can also be <span class="def">hidden</span>. Usually one is named `index.html`. They're like typical HTML files but in Electron you've got the whole Node API available here, too, unlike any web browser.
 
 ![renderer process diagram](imgs/renderer.png)
 
 ### Definitions:
-- **Each browser window** is a separate renderer process, meaning a crash in one won't affect another.
+- **Each is independent** every renderer process is a separate process, meaning a crash in one won't affect another.
+- **Hidden** You can set a window to be hidden and use it to just execute code in the background.
 
 ### Next: [Think of it like this](#think-of-it-like-this)
 

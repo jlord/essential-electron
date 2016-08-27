@@ -157,7 +157,7 @@
 <li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">Mozilla Developer Network</a> (like a dictionary for websites and JavaScript)</li>
 </ul>
 <h2 id="two-processes">Two Processes</h2>
-<p>Electron has two processes: Main and Renderer. There are <span class="def">modules</span> that work on each or both of the two processes. The main process is more behind-the-scenes while the renderer process is each of the windows of your app that users see.</p>
+<p>Electron has two types of processes: Main and Renderer. There are <span class="def">modules</span> that work on each or in both of the processes. The main process is more behind-the-scenes while the renderer process is each of the windows in your app.</p>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
 <li><strong>Modules</strong> Electron&#39;s APIs are grouped together based on what they do. For instance the <code>dialog</code> module has all the APIs for native dialogs like open file, save file and alerts.</li>
@@ -180,11 +180,12 @@
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="renderer-process">Renderer Process</h2>
-<p>The renderer process is <span class="def">each browser window</span> that you create in your app, with one commonly named <code>index.html</code>. Each of these displays the web pages you create—but you&#39;ve got the whole Node API available here, too, unlike any web browser.</p>
+<p>The renderer process is a browser window in your app. Unlike the main process, there can be multiple of these and <span class="def">each is independent</span>. They can also be <span class="def">hidden</span>. Usually one is named <code>index.html</code>. They&#39;re like typical HTML files but in Electron you&#39;ve got the whole Node API available here, too, unlike any web browser.</p>
 <p><img src="imgs/renderer.png" alt="renderer process diagram"></p>
 <h3 id="definitions-">Definitions:</h3>
 <ul>
-<li><strong>Each browser window</strong> is a separate renderer process, meaning a crash in one won&#39;t affect another.</li>
+<li><strong>Each is independent</strong> every renderer process is a separate process, meaning a crash in one won&#39;t affect another.</li>
+<li><strong>Hidden</strong> You can set a window to be hidden and use it to just execute code in the background.</li>
 </ul>
 <h3 id="next-think-of-it-like-this-think-of-it-like-this-">Next: <a href="#think-of-it-like-this">Think of it like this</a></h3>
 <h3 id="resources-">Resources:</h3>
