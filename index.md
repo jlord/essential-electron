@@ -7,7 +7,7 @@ Concise plain-speak about Electron.
 | [What is Electron?](#what-is-electron-) |
 | [Why is this important?](#why-is-this-important-) |
 | [How, even?](#how-even-) |
-| [What is developing like?](#what-is-developing-like-) |
+| [What is developing like?](#what-s-developing-like-) |
 
 | Development |
 | --- |
