@@ -25,6 +25,7 @@ Concise plain-speak about Electron.
 | [Packaging](#packaging) |
 | [More resources](#more-resources) |
 
+Read this in [Japanese](index-jp.html).
 
 ## What is Electron?
 
