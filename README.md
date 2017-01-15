@@ -12,7 +12,7 @@ Here's a [blog post](http://jlord.us/blog/essential-electron.html) with a bit mo
 
 ### Build it
 
-The site is built from one markdown file `index.md` with one bit of inline HTML for creating the styles on the vocabulary words. The markdown is pared and turned into HTML, sandwiched between `header.html` and `footer.html` through a tiny Node script in `index.js`.
+The site is built from one markdown file `index.md` with one bit of inline HTML for creating the styles on the vocabulary words. The markdown is parsed and turned into HTML, sandwiched between `header.html` and `footer.html` through a tiny Node script in `index.js`.
 
 The stylesheet is `style.css` and it uses system fonts unless you have Source Sans Pro installed locally.
 
