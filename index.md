@@ -76,7 +76,7 @@ Developing with Electron is like building web pages that you can seamlessly <spa
 ### Next: [Prereqs](#prereqs)
 
 ### Definitions:
-- **Use Node in** That's not all! In additional to the full Node API everywhere, you can make use of the over 300,000 modules already written and hosted on npm, a package manager for Node.
+- **Use Node in** That's not all! In addition to the full Node API everywhere, you can make use of the over 300,000 modules already written and hosted on npm, a package manager for Node.
 - **One browser** Not all browsers are the same and web designers and developers often have to go the extra mile to make one site look the same on each.
 - **Latest Chrome** Use over 90% of ES2015, the latest updates to JavaScript, as well as cool features like CSS Variables.
 
