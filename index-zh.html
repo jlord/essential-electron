@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Essential information about Electron. Plainly.">
+    <meta name="author" content="Jessica Lord">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@jllord">
+    <meta name="twitter:title" content="Essential Electron">
+    <meta name="twitter:description" content="Concise plain-speak about Electron.">
+    <meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/1305617/17869520/85f7a4c0-6868-11e6-8152-be3852881347.png">
+    <title>Essential Electron</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="essential-electron">Essential Electron</h1>
+        <p>Concise plain-speak about Electron.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Background</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#what-is-electron-">Electron 是什么？</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#why-is-this-important-">为什么它如此重要？</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#how-even-">它由什么组成？</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#what-s-developing-like-">开发体验如何？</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Development</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#prereqs">前提条件</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#two-processes">两个进程</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#main-process">主进程</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#renderer-process">渲染进程</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#think-of-it-like-this">这样思考</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Development Cont&#39;d</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#stay-in-touch">保持通讯</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#put-it-all-together">总而言之</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#quick-start">Quick start</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#packaging">打包</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#more-resources">更多参考资料</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>用 <a href="index-jp.html">日语</a>、<a href="index.html">英语</a>、<a href="index-zh.html">中文</a>阅读.</p>
+        <h2 id="what-is-electron-">Electron 是什么？</h2>
+        <p>Electron 是一个可以用 <span class="def">JavaScript、HTML 和 CSS </span>构建桌面应用程序的<span class="def">库</span>。这些应用程序能打包到 Mac、Windows 和 Linux 系统上运行，也能上架到 Mac 和 Windows 的 App Store。</p>
+        <h3>下一节: <a href="#why-is-this-important-">为什么它如此重要？</a></h3>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>JavaScript, HTML and CSS</strong> 都是 Web 语言，它们是组成网站的一部分，浏览器（如 Chrome）懂得如何将这些代码转为可视化图像。</li>
+            <li><strong>Electron 是一个库</strong> Electron 对底层代码进行抽象和封装，让开发者能在此之上构建项目。</li>
+        </ul>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/apps">由Electron构建的项目</a></li>
+            <li><a href="http://electron.atom.io/#get-started">Electron API Demos</a> (看看你可以用Electron做什么)</li>
+        </ul>
+        <h2 id="why-is-this-important-">为什么它如此重要？</h2>
+        <p>通常来说，每个操作系统的桌面应用都由各自的<span class="def">原生语言</span>进行编写，这意味着需要 3 个团队分别为该应用编写相应版本。而 Electron 则允许你用 Web 语言编写一次即可。</p>
+        <h3>下一节: <a href="#how-even-">它由什么组成？</a></h3>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>原生（操作系统）语言</strong> 用于开发主流操作系统应用的原生语言的对应关系（大多数情况下）：Mac 对应 Objective C、Linux 对应 C、Windows 对应 C++</li>
+        </ul>
+        <h2 id="how-even-">它由什么组成？</h2>
+        <p>Electron 结合了 <span class="def">Chromium</span> 、 <span class="def">Node.js</span> ，还有像打开文件窗口、通知、图标等这样的用于调用操作系统本地功能的 API。</p>
+        <p><img alt="Electron components" src="imgs/components.png" /></p>
+        <h3>下一节: <a href="#what-s-developing-like-">开发体验如何?</a></h3>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>API</strong> 应用程序接口描述了可供您使用库的一组功能。</li>
+            <li><strong>Chromium</strong> 由Google创建，这是Google Chrome浏览器使用的开源库。</li>
+            <li><strong>Node.js</strong> （或者叫 Node）用于在服务器上编写JavaScript，访问文件系统和网络的工具（您的计算机也是服务器！）</li>
+        </ul>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="https://nodejs.org">Node.js</a></li>
+            <li><a href="http://chromium.org">Chromium</a></li>
+            <li><a href="http://electron.atom.io/blog/2016/08/08/electron-internals-using-node-as-a-library">Electron blog post: Using Node as a Library</a> (deep dive)</li>
+            <li><a href="http://electron.atom.io/docs/tutorial/electron-versioning/">Electron 版本发展</a></li>
+        </ul>
+        <h2 id="what-s-developing-like-">开发体验如何？</h2>
+        <p>基于 Electron 的开发就像在开发网页，而且能够无缝地 <span class="def">使用 Node</span>。或者说：在构建一个 Node 应用的同时，通过 HTML 和 CSS 构建界面。另外，你只需为<span class="def">一个浏览器（最新的 Chrome）</span>进行设计（即无需考虑兼容性等）。</p>
+        <h3>下一节: <a href="#prereqs">前提条件</a></h3>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>使用 Node</strong> 这还不是全部! 除了完整的Node API之外，您还可以使用已经编写和托管在npm上的超过30万个模块，这是Node的包管理器。</li>
+            <li><strong>一个浏览器</strong> 并非所有的浏览器都是一样的，网页设计师和开发人员经常不得不多一些时间才能让网站在每个浏览器上的效果看起来都一样。</li>
+            <li><strong>最新版 Chrome</strong> 可使用超过90%的ES2015特性，最新的JavaScript，以及炫酷的特性，如CSS变量。</li>
+        </ul>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://caniuse.com/#home">我可以使用?</a> (查看每个浏览器支持的内容)</li>
+            <li><a href="http://blog.chromium.org">更新到 Chrome</a> (Chromium 博客)</li>
+            <li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">CSS 变量</a></li>
+        </ul>
+        <h2 id="prereqs">前提条件</h2>
+        <p>由于Electron的两大组件都是网站和JavaScript，因此在开始之前，您需要这两者的相关经验。查看一些关于HTML，CSS和JS的教程，并在您的计算机上安装Node。</p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>让我们真正开始</strong>, 学习制作网站和编写Node并不是一夜之间的事情，但希望以下链接可以帮助您入门。</li>
+        </ul>
+        <h3>下一节: <a href="#two-processes">两个进程</a></h3>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="https://nodejs.org">安装 Node</a> (chose the LTS version)</li>
+            <li><a href="http://nodeschool.io">NodeSchool Tutorials</a> (try learnyounode)</li>
+            <li><a href="http://jsforcats.com">JS for Cats</a> (by Max Ogden)</li>
+            <li><a href="http://learn.shayhowe.com/html-css">学习 HTML &amp; CSS 编程</a> (by Shay Howe)</li>
+            <li><a href="https://css-tricks.com">CSS Tricks</a> (learn CSS best practices and tips)</li>
+            <li><a href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care?hl=en">Mozilla Developer Network</a> (like a dictionary for websites and JavaScript)</li>
+        </ul>
+        <h2 id="two-processes">两个进程</h2>
+        <p>Electron 有两种进程：『主进程』和『渲染进程』。部分<span class="def">模块</span>只能在两者之一上运行，而有些则无限制。主进程更多地充当幕后角色，而渲染进程则是应用程序的各个窗口。</p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>模块</strong> Electron 的 API 是根据它们的用途进行分组。例如： <code>dialog</code> 模块拥有所有原生 dialog 的 API，如打开文件、保存文件和警告等弹窗。</li>
+        </ul>
+        <h3>下一节: <a href="#main-process">主进程</a></h3>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
+        </ul>
+        <h2 id="main-process">主进程</h2>
+        <p>主进程，通常是一个命名为 <code>main.js</code> 的文件，该文件是每个 Electron 应用的入口。它控制了应用的生命周期（从打开到关闭）。它既能<span class="def">调用原生元素</span>，也能创建新的（多个）渲染进程。另外，Node API 是内置其中的。</p>
+        <p><img alt="main process diagram" src="imgs/main.png" /></p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>调用原生元素</strong> 打开 diglog 和其它操作系统的交互均是参考资料密集型操作，因此都需要在主进程完成,从而不会中断渲染程序进程。</li>
+        </ul>
+        <h3>下一节: <a href="#renderer-process">渲染进程</a></h3>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
+        </ul>
+        <h2 id="renderer-process">渲染进程</h2>
+        <p>渲染进程是应用的一个浏览器窗口。与主进程不同，它能存在多个,并且相互独立.他们也能是<span class="def">隐藏</span>的。主窗口通常被命名为 <code>index.html</code> 。它们就像典型的 HTML 文件，但 Electron 赋予了它们完整的 Node API。因此，这也是它与浏览器的区别。</p>
+        <p><img alt="renderer process diagram" src="imgs/renderer.png" /></p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>相互独立</strong> 每个渲染进程都是独立的，这意味着某个渲染进程的崩溃，也不会影响其余渲染进程。</li>
+            <li><strong>隐藏</strong> 你可以设置隐藏一个窗口，让它在后台执行代码。</li>
+        </ul>
+        <h3>下一节: <a href="#think-of-it-like-this">这样思考</a></h3>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
+        </ul>
+        <h2 id="think-of-it-like-this">这样思考</h2>
+        <p>在Chrome（或其他网络浏览器）中，每个选项卡及其网页就像Electron中的单个渲染器进程。如果关闭所有选项卡，Chrome仍然存在，这就像您的主进程一样，您可以打开新窗口或退出应用程序。</p>
+        <p><img alt="Chrome comparison of the two processes" src="imgs/like-this.png" /></p>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/docs/tutorial/quick-start/#differences-between-main-process-and-renderer-process">主进程和渲染进程的差异</a></li>
+        </ul>
+        <h3>下一节: <a href="#stay-in-touch">保持通讯</a></h3>
+        <h2 id="stay-in-touch">保持通讯</h2>
+        <p>由于主进程和渲染进程各自负责不同的任务，而对于需要协同完成的任务，它们需要相互通讯。<span class="def">IPC</span>就为此而生，它提供了进程间的通讯。但它只能在主进程与渲染进程之间传递信息（即渲染进程之间不能进行直接通讯）。</p>
+        <p><img alt="IPC diagram" src="imgs/ipc.png" /></p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>IPC</strong> 主进程和渲染进程各自拥有一个 IPC 模块。</li>
+        </ul>
+        <h3>下一节: <a href="#put-it-all-together">总而言之</a></h3>
+        <h2 id="put-it-all-together">总而言之</h2>
+        <p>Electron 应用就像 Node 应用，它也依赖一个 <span class="def"><code>package.json</code> </span> 文件。该文件定义了哪个文件作为主进程，并因此让 Electron 知道从何启动应用。然后主进程能创建渲染进程，并能使用 IPC 让两者间进行消息传递</p>
+        <p><img alt="Electron app components diagram" src="imgs/app-files.png" /></p>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong><code>package.json</code> 文件</strong> 这是Node应用程序中的一个常用文件，其中包含有关该项目的元数据和一系列依赖关系。</li>
+        </ul>
+        <h3>下一节: <a href="#quick-start">Quick start</a></h3>
+        <h2 id="quick-start">Quick start</h2>
+        <p>Electron Quick Start存储库是一个简单的Electron应用程序，包含您在此处了解到的 <code>package.json</code> ，<code>main.js</code> 和 <code>index.html</code> - 一个开始的好地方！您也可以像选择框架一样去从模板库中选择一个模板boilerplates。</p>
+        <h3>下一节: <a href="#packaging">打包</a></h3>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="https://github.com/electron/electron-quick-start">Electron Quick Start</a></li>
+            <li><a href="http://electron.atom.io/community#boilerplates">Awesome Electron: Boilerplates</a></li>
+        </ul>
+        <h2 id="packaging">打包</h2>
+        <p>一旦您的应用程序构建完成，您可以使用Mac，Windows或Linux的命令行工具<code>electron-packager</code> 将其打包。为此添加脚本到你的 <code>package.json</code> 。请查看下面的资源，以便在Mac和Windows应用商店中获取您的应用。</p>
+        <h3>下一节: <a href="#more-resources">更多参考资料</a></h3>
+        <h3>定义:</h3>
+        <ul>
+            <li><strong>command-line tool</strong> 这是一个通过在终端中传递命令来与之交互的程序。</li>
+        </ul>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://github.com/electron-userland/electron-packager">electron-packager</a></li>
+            <li><a href="https://github.com/electron/electron-api-demos/blob/master/package.json#L15-L18">Electron API Demos packaging scripts</a></li>
+            <li><a href="http://electron.atom.io/docs/tutorial/mac-app-store-submission-guide/">Mac App Store Electron Guide</a></li>
+            <li><a href="http://electron.atom.io/docs/tutorial/windows-store-guide/">Windows App Store Electron Guide</a></li>
+        </ul>
+        <h2 id="more-resources">More 参考资料</h2>
+        <p>这里的概念会让你感觉很不错，但当然还有其他更多的资料。</p>
+        <h3>参考资料:</h3>
+        <ul>
+            <li><a href="http://electron.atom.io/docs/">Full Electron docs</a></li>
+            <li><a href="http://electron.atom.io/community/">Awesome Electron: tools, videos, components, meetups</a></li>
+            <li><a href="http://electron.atom.io/spectron/">Spectron</a> (Electron testing library)</li>
+            <li><a href="http://electron.atom.io/devtron/">Devtron</a> (Inspect your Electron app)</li>
+        </ul>
+        <footer>
+            <small>✌️ Made because of computers by <a href="https://www.twitter.com/jllord" target="_blank">@jllord</a>. <a href="https://github.com/jlord/essential-electron" target="_blank"> Open source on GitHub </a>.</small>
+        </footer>
+    </div>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-31423721-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
