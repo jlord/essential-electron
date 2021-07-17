@@ -25,8 +25,7 @@
 <th>Background</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#what-is-electron-">What is Electron?</a></td>
 </tr>
 <tr>
@@ -38,16 +37,14 @@
 <tr>
 <td><a href="#what-s-developing-like-">What is developing like?</a></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
 <tr>
 <th>Development</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#prereqs">Prereqs</a></td>
 </tr>
 <tr>
@@ -62,16 +59,14 @@
 <tr>
 <td><a href="#think-of-it-like-this">Think of it like this</a></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
 <tr>
 <th>Development Cont&#39;d</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#stay-in-touch">Stay in touch</a></td>
 </tr>
 <tr>
@@ -86,56 +81,55 @@
 <tr>
 <td><a href="#more-resources">More resources</a></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>Read this in <a href="index-jp.html">Japanese</a>.</p>
-<h2 id="what-is-electron-">What is Electron?</h2>
+<h2 id="what-is-electron">What is Electron?</h2>
 <p>Electron is a <span class="def">library</span> you can use to build desktop applications with <span class="def">JavaScript, HTML and CSS</span>. These applications can be packaged to run on Mac, Windows and Linux computers as well as be placed in the Mac and Windows app stores.</p>
-<h3 id="next-why-is-this-important-why-is-this-important-">Next: <a href="#why-is-this-important-">Why is this important?</a></h3>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="next-why-is-this-important">Next: <a href="#why-is-this-important-">Why is this important?</a></h3>
+<h3 id="definitions">Definitions:</h3>
 <ul>
 <li><strong>JavaScript, HTML and CSS</strong> Are web languages, meaning they are the building blocks of websites and browsers like Chrome know how to turn this code into the visual graphics you see.</li>
 <li><strong>Electron is a library</strong> Electron is code that you can re-use and not have to write yourself. You use it to build your project on top of.</li>
 </ul>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/apps">Apps built on Electron</a></li>
 <li><a href="http://electron.atom.io/#get-started">Electron API Demos</a> (see what you can do with Electron)</li>
 </ul>
-<h2 id="why-is-this-important-">Why is this important?</h2>
+<h2 id="why-is-this-important">Why is this important?</h2>
 <p>Typically, desktop applications for each operating system are written in each&#39;s <span class="def">native language</span>. That can mean having three teams writing three versions of your app. Electron enables you to write your app once and with web languages.</p>
-<h3 id="next-how-even-how-even-">Next: <a href="#how-even-">How, even?</a></h3>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="next-how-even">Next: <a href="#how-even-">How, even?</a></h3>
+<h3 id="definitions-1">Definitions:</h3>
 <ul>
 <li><strong>native (operating system) language</strong> These are languages that the major operating systems are (mostly) built with: Mac, Objective C; Linux, C; Windows, C++.</li>
 </ul>
-<h2 id="how-even-">How, even?</h2>
+<h2 id="how-even">How, even?</h2>
 <p>Electron combines <span class="def">Chromium</span> and <span class="def">Node.js</span> with a set of custom <span class="def">APIs</span> for native operating system functions like open file dialogs, notifications, icons and more.</p>
 <p><img src="imgs/components.png" alt="Electron components"></p>
-<h3 id="next-what-is-developing-like-what-s-developing-like-">Next: <a href="#what-s-developing-like-">What is developing like?</a></h3>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="next-what-is-developing-like">Next: <a href="#what-s-developing-like-">What is developing like?</a></h3>
+<h3 id="definitions-2">Definitions:</h3>
 <ul>
 <li><strong>API</strong> Application Program Interface describes the set of functions made available for you to use a library with.</li>
 <li><strong>Chromium</strong> Created by Google, this is the open source library used by Google&#39;s browser Chrome.</li>
 <li><strong>Node.js</strong> (or Node) A tool for writing JavaScript on servers, accessing filesystems and networks (your computer is also a server!).</li>
 </ul>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources-1">Resources:</h3>
 <ul>
 <li><a href="https://nodejs.org">Node.js</a></li>
 <li><a href="http://chromium.org">Chromium</a></li>
 <li><a href="http://electron.atom.io/blog/2016/08/08/electron-internals-using-node-as-a-library">Electron blog post: Using Node as a Library</a> (deep dive)</li>
 <li><a href="http://electron.atom.io/docs/tutorial/electron-versioning/">Electron versioning</a></li>
 </ul>
-<h2 id="what-s-developing-like-">What&#39;s developing like?</h2>
+<h2 id="whats-developing-like">What&#39;s developing like?</h2>
 <p>Developing with Electron is like building web pages that you can seamlessly <span class="def">use Node in</span>—or building a Node app in which you can build an interface with HTML and CSS. And you only need to design for <span class="def">one browser</span>, the <span class="def">latest Chrome</span>.</p>
-<h3 id="next-prereqs-prereqs-">Next: <a href="#prereqs">Prereqs</a></h3>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="next-prereqs">Next: <a href="#prereqs">Prereqs</a></h3>
+<h3 id="definitions-3">Definitions:</h3>
 <ul>
 <li><strong>Use Node in</strong> That&#39;s not all! In addition to the full Node API everywhere, you can make use of the over 300,000 modules already written and hosted on npm, a package manager for Node.</li>
 <li><strong>One browser</strong> Not all browsers are the same and web designers and developers often have to go the extra mile to make one site look the same on each.</li>
 <li><strong>Latest Chrome</strong> Use over 90% of ES2015, the latest updates to JavaScript, as well as cool features like CSS Variables.</li>
 </ul>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources-2">Resources:</h3>
 <ul>
 <li><a href="http://caniuse.com/#home">Can I Use?</a> (see what each browser supports)</li>
 <li><a href="http://blog.chromium.org">Updates to Chrome</a> (Chromium Blog)</li>
@@ -143,12 +137,12 @@
 </ul>
 <h2 id="prereqs">Prereqs</h2>
 <p>Since Electron&#39;s two components are websites and JavaScript, you&#39;ll need experience in both of those before you begin. Check out some tutorials on HTML, CSS and JS and install Node on your computer.</p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-4">Definitions:</h3>
 <ul>
 <li><strong>Let&#39;s be real</strong>, learning to make websites and write Node are not overnight things but hopefully the links below can get you started.</li>
 </ul>
-<h3 id="next-two-processes-two-processes-">Next: <a href="#two-processes">Two Processes</a></h3>
-<h3 id="resources-">Resources:</h3>
+<h3 id="next-two-processes">Next: <a href="#two-processes">Two Processes</a></h3>
+<h3 id="resources-3">Resources:</h3>
 <ul>
 <li><a href="https://nodejs.org">Install Node</a> (chose the LTS version)</li>
 <li><a href="http://nodeschool.io">NodeSchool Tutorials</a> (try learnyounode)</li>
@@ -159,80 +153,80 @@
 </ul>
 <h2 id="two-processes">Two Processes</h2>
 <p>Electron has two types of processes: Main and Renderer. There are <span class="def">modules</span> that work on each or in both of the processes. The main process is more behind-the-scenes while the renderer process is each of the windows in your app.</p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-5">Definitions:</h3>
 <ul>
 <li><strong>Modules</strong> Electron&#39;s APIs are grouped together based on what they do. For instance the <code>dialog</code> module has all the APIs for native dialogs like open file, save file and alerts.</li>
 </ul>
-<h3 id="next-main-process-main-process-">Next: <a href="#main-process">Main Process</a></h3>
-<h3 id="resources-">Resources:</h3>
+<h3 id="next-main-process">Next: <a href="#main-process">Main Process</a></h3>
+<h3 id="resources-4">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="main-process">Main Process</h2>
 <p>The main process, commonly a file named <code>main.js</code>, is the entry point to every Electron app. It controls the life of the app, from open to close. It also <span class="def">calls the native elements</span> and creates each new renderer process in the app. The full Node API is built in.</p>
 <p><img src="imgs/main.png" alt="main process diagram"></p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-6">Definitions:</h3>
 <ul>
 <li><strong>Calls the native elements</strong> Opening dialogs and other native operating system interactions are resource intensive so it&#39;s done in the main process, leaving the renderer process uninterrupted.</li>
 </ul>
-<h3 id="next-renderer-process-renderer-process-">Next: <a href="#renderer-process">Renderer Process</a></h3>
-<h3 id="resources-">Resources:</h3>
+<h3 id="next-renderer-process">Next: <a href="#renderer-process">Renderer Process</a></h3>
+<h3 id="resources-5">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="renderer-process">Renderer Process</h2>
 <p>The renderer process is a browser window in your app. Unlike the main process, there can be multiple of these and <span class="def">each is independent</span>. They can also be <span class="def">hidden</span>. Usually one is named <code>index.html</code>. They&#39;re like typical HTML files but in Electron you&#39;ve got the whole Node API available here, too, unlike any web browser.</p>
 <p><img src="imgs/renderer.png" alt="renderer process diagram"></p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-7">Definitions:</h3>
 <ul>
 <li><strong>Each is independent</strong> every renderer process is a separate process, meaning a crash in one won&#39;t affect another.</li>
 <li><strong>Hidden</strong> You can set a window to be hidden and use it to just execute code in the background.</li>
 </ul>
-<h3 id="next-think-of-it-like-this-think-of-it-like-this-">Next: <a href="#think-of-it-like-this">Think of it like this</a></h3>
-<h3 id="resources-">Resources:</h3>
+<h3 id="next-think-of-it-like-this">Next: <a href="#think-of-it-like-this">Think of it like this</a></h3>
+<h3 id="resources-6">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/api/">Electron APIs List</a></li>
 </ul>
 <h2 id="think-of-it-like-this">Think of it like this</h2>
 <p>In Chrome (or another web browser) each tab and its web page is like a single renderer process in Electron. If you close all of the tabs, Chrome is still there, this is like your main process, and you can open a new window or quit the app.</p>
 <p><img src="imgs/like-this.png" alt="Chrome comparison of the two processes"></p>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources-7">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/tutorial/quick-start/#differences-between-main-process-and-renderer-process">Differences between Main and Renderer Process</a></li>
 </ul>
-<h3 id="next-stay-in-touch-stay-in-touch-">Next: <a href="#stay-in-touch">Stay in touch</a></h3>
+<h3 id="next-stay-in-touch">Next: <a href="#stay-in-touch">Stay in touch</a></h3>
 <h2 id="stay-in-touch">Stay in touch</h2>
 <p>The main and renderer processes need to be able to communicate since they&#39;re both responsible for different tasks. For that there&#39;s <span class="def">IPC</span>, interprocess communication. Use it to pass messages between main and renderer processes.</p>
 <p><img src="imgs/ipc.png" alt="IPC diagram"></p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-8">Definitions:</h3>
 <ul>
 <li><strong>IPC</strong> The main process and renderer process each have an IPC module to use.</li>
 </ul>
-<h3 id="next-put-it-all-together-put-it-all-together-">Next: <a href="#put-it-all-together">Put it all together</a></h3>
+<h3 id="next-put-it-all-together">Next: <a href="#put-it-all-together">Put it all together</a></h3>
 <h2 id="put-it-all-together">Put it all together</h2>
 <p>Electron apps are like Node apps and use a <span class="def"><code>package.json</code> file</span>. It&#39;s there that you define which file is your main process and thus where Electron should start your app. Then that main process can create renderer processes and you&#39;ll use IPC to pass messages between the two.</p>
 <p><img src="imgs/app-files.png" alt="Electron app components diagram"></p>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="definitions-9">Definitions:</h3>
 <ul>
 <li><strong><code>package.json</code> file</strong> This is a common file in Node apps which contains metadata about the project and a list of dependencies.</li>
 </ul>
-<h3 id="next-quick-start-quick-start-">Next: <a href="#quick-start">Quick start</a></h3>
+<h3 id="next-quick-start">Next: <a href="#quick-start">Quick start</a></h3>
 <h2 id="quick-start">Quick start</h2>
 <p>The Electron Quick Start repository is a bare-bones Electron app with the <code>package.json</code>, <code>main.js</code> and <code>index.html</code> you&#39;ve learned about here—a great place to get started! Also, check out the boilerplates for templates with your framework of choice.</p>
-<h3 id="next-packaging-packaging-">Next: <a href="#packaging">Packaging</a></h3>
-<h3 id="resources-">Resources:</h3>
+<h3 id="next-packaging">Next: <a href="#packaging">Packaging</a></h3>
+<h3 id="resources-8">Resources:</h3>
 <ul>
 <li><a href="https://github.com/electron/electron-quick-start">Electron Quick Start</a></li>
 <li><a href="http://electron.atom.io/community#boilerplates">Awesome Electron: Boilerplates</a></li>
 </ul>
 <h2 id="packaging">Packaging</h2>
 <p>Once your app is built, you can package it with the <span class="def">command-line tool</span> <code>electron-packager</code> for Mac, Windows or Linux. Add scripts for this to your <code>package.json</code>. Check out resources below for getting your app in the Mac and Windows app stores.</p>
-<h3 id="next-more-resources-more-resources-">Next: <a href="#more-resources">More resources</a></h3>
-<h3 id="definitions-">Definitions:</h3>
+<h3 id="next-more-resources">Next: <a href="#more-resources">More resources</a></h3>
+<h3 id="definitions-10">Definitions:</h3>
 <ul>
 <li><strong>command-line tool</strong> This is a program that you interact with by passing commands to it in your terminal.</li>
 </ul>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources-9">Resources:</h3>
 <ul>
 <li><a href="http://github.com/electron-userland/electron-packager">electron-packager</a></li>
 <li><a href="https://github.com/electron/electron-api-demos/blob/master/package.json#L15-L18">Electron API Demos packaging scripts</a></li>
@@ -241,7 +235,7 @@
 </ul>
 <h2 id="more-resources">More resources</h2>
 <p>The concepts here will get you pretty far, but there is of course more so here are other resources.</p>
-<h3 id="resources-">Resources:</h3>
+<h3 id="resources-10">Resources:</h3>
 <ul>
 <li><a href="http://electron.atom.io/docs/">Full Electron docs</a></li>
 <li><a href="http://electron.atom.io/community/">Awesome Electron: tools, videos, components, meetups</a></li>
