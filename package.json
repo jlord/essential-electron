@@ -10,6 +10,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "marked": "^0.3.6"
+    "marked": "^2.1.3"
   }
 }
